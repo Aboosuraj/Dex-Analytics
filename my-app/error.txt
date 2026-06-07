@@ -1,0 +1,106 @@
+Vercel CLI 54.9.1 (Node.js 24.14.0)
+> [debug] [2026-06-07T00:17:07.748Z] Agent/TTY/nonInteractive: isAgent=false agentName=none stdin.isTTY=true --non-interactive=false explicitFalse=false => nonInteractive=false
+> [debug] [2026-06-07T00:17:07.749Z] user supplied a possible target for deployment or an extension
+> [debug] [2026-06-07T00:17:07.810Z] failed to find extension command with name "vercel---prod"
+> [debug] [2026-06-07T00:17:07.841Z] Setting target to production
+> [debug] [2026-06-07T00:17:07.850Z] Spinner invoked (Retrieving project…) with a 1000ms delay
+> [debug] [2026-06-07T00:17:07.851Z] Valid access token, skipping token refresh.
+> [debug] [2026-06-07T00:17:07.862Z] #1 → GET https://api.vercel.com/teams/team_3iZb1OLqjC9glHITp28qA1JB?teamId=team_3iZb1OLqjC9glHITp28qA1JB
+> [debug] [2026-06-07T00:17:07.864Z] #2 → GET https://api.vercel.com/v9/projects/prj_DxiOKEl9NQ2UFfOWLji5AiblQJ9p?teamId=team_3iZb1OLqjC9glHITp28qA1JB
+> [debug] [2026-06-07T00:17:08.415Z] #2 ← 200 OK: sfo1::8dgn9-1780791428095-55c790b16a48 [551ms]
+> [debug] [2026-06-07T00:17:08.438Z] #1 ← 200 OK: sfo1::86x8x-1780791428099-eb6261e55b45 [575ms]
+> [debug] [2026-06-07T00:17:08.440Z] Error while parsing repo data: ENOENT: no such file or directory, open '/workspaces/Dex-Analytics/my-app/.git/config'
+> [debug] [2026-06-07T00:17:08.440Z] Error while parsing repo data: ENOENT: no such file or directory, open '/workspaces/Dex-Analytics/my-app/.git/config'
+> [debug] [2026-06-07T00:17:08.468Z] Spinner invoked (Deploying aboosuraj-s-projects/dex-analytics-opn) with a 0ms delay
+[client-debug] 2026-06-07T00:17:08.468Z Creating deployment...
+[client-debug] 2026-06-07T00:17:08.468Z Provided 'path' is a directory.
+[client-debug] 2026-06-07T00:17:08.471Z Found 26 rules in .vercelignore
+[client-debug] 2026-06-07T00:17:08.471Z Building file tree...
+[client-debug] 2026-06-07T00:17:08.474Z Found 21 files in the specified directory
+[client-debug] 2026-06-07T00:17:08.478Z Yielding a 'hashes-calculated' event with 21 hashes
+[client-debug] 2026-06-07T00:17:08.478Z Using provided API URL: https://api.vercel.com
+[client-debug] 2026-06-07T00:17:08.478Z Using provided user agent: vercel 54.9.1 node-v24.14.0 linux (x64)
+[client-debug] 2026-06-07T00:17:08.478Z Setting platform version to harcoded value 2
+[client-debug] 2026-06-07T00:17:08.478Z Creating the deployment and starting upload...
+[client-debug] 2026-06-07T00:17:08.479Z Determining necessary files for upload...
+[client-debug] 2026-06-07T00:17:08.481Z Creating deployment
+[client-debug] 2026-06-07T00:17:08.481Z Sending deployment creation API request
+[client-debug] 2026-06-07T00:17:08.765Z Deployment response: {"error":{"code":"missing_files","message":"Missing files","missing":["bf1dbec9bbb634a2288847ab52e0b0c5d4eff549"]}}
+[client-debug] 2026-06-07T00:17:08.766Z Error: Deployment request status is 400
+[client-debug] 2026-06-07T00:17:08.766Z 1 files are required to upload
+[client-debug] 2026-06-07T00:17:08.766Z Yielding a 'file-count' event
+> [debug] [2026-06-07T00:17:08.766Z] Total files 21, 1 changed
+> [debug] [2026-06-07T00:17:08.767Z] Spinner invoked (Uploading [--------------------] (0.0B/1.9KB)) with a 0ms delay
+[client-debug] 2026-06-07T00:17:08.767Z Building an upload list...
+[client-debug] 2026-06-07T00:17:08.768Z Starting upload
+[client-debug] 2026-06-07T00:17:08.768Z POST https://api.vercel.com/v2/files?teamId=team_3iZb1OLqjC9glHITp28qA1JB
+> [debug] [2026-06-07T00:17:08.769Z] Spinner invoked (Uploading [====================] (1.9KB/1.9KB)) with a 0ms delay
+[client-debug] 2026-06-07T00:17:09.072Z DONE in 304ms: POST https://api.vercel.com/v2/files?teamId=team_3iZb1OLqjC9glHITp28qA1JB
+[client-debug] 2026-06-07T00:17:09.072Z File bf1dbec9bbb634a2288847ab52e0b0c5d4eff549 (/workspaces/Dex-Analytics/my-app/error.txt) uploaded
+[client-debug] 2026-06-07T00:17:09.072Z Yielding a 'file-uploaded' event
+> [debug] [2026-06-07T00:17:09.072Z] Uploaded: /workspaces/Dex-Analytics/my-app/error.txt (1.88KB)
+[client-debug] 2026-06-07T00:17:09.072Z All files uploaded
+[client-debug] 2026-06-07T00:17:09.072Z Yielding a 'all-files-uploaded' event
+[client-debug] 2026-06-07T00:17:09.072Z Starting deployment creation
+[client-debug] 2026-06-07T00:17:09.072Z Creating deployment
+[client-debug] 2026-06-07T00:17:09.073Z Sending deployment creation API request
+[client-debug] 2026-06-07T00:17:10.307Z Deployment response: {"alias":["dex-analytics-opn-aboosuraj-s-projects.vercel.app","dex-analytics-opn-aboosuraj-2435-aboosuraj-s-projects.vercel.app"],"aliasAssigned":false,"automaticAliases":["dex-analytics-opn-aboosuraj-s-projects.vercel.app","dex-analytics-opn-aboosuraj-2435-aboosuraj-s-projects.vercel.app"],"bootedAt":1780791429387,"buildingAt":1780791429387,"buildSkipped":false,"createdAt":1780791429387,"creator":{"uid":"iHxT6ORoFqvZg25QAwAAYpHB","username":"aboosuraj-2435"},"id":"dpl_3VtBJ2MXVEEVS4yap6GitV5NG9NV","name":"dex-analytics-opn","meta":{"gitCommitAuthorName":"Abubakar suraj","gitCommitAuthorEmail":"145049374+Aboosuraj@users.noreply.github.com","gitCommitMessage":"Initial commit","gitCommitRef":"main","gitCommitSha":"750f68de51335b0237b5655b8a8740f646fdd228","gitDirty":"1"},"originCacheRegion":"iad1","project":{"id":"prj_DxiOKEl9NQ2UFfOWLji5AiblQJ9p","name":"dex-analytics-opn","framework":"nextjs"},"public":false,"readyState":"INITIALIZING","regions":["iad1"],"source":"cli","status":"INITIALIZING","target":"production","team":{"id":"team_3iZb1OLqjC9glHITp28qA1JB","name":"aboosuraj's projects","slug":"aboosuraj-s-projects"},"type":"LAMBDAS","url":"dex-analytics-mbsxceqil-aboosuraj-s-projects.vercel.app","version":2,"previewCommentsEnabled":true,"oidcTokenClaims":{"sub":"owner:aboosuraj-s-projects:project:dex-analytics-opn:environment:production","iss":"https://oidc.vercel.com/aboosuraj-s-projects","scope":"owner:aboosuraj-s-projects:project:dex-analytics-opn:environment:production","aud":"https://vercel.com/aboosuraj-s-projects","owner":"aboosuraj-s-projects","owner_id":"team_3iZb1OLqjC9glHITp28qA1JB","project":"dex-analytics-opn","project_id":"prj_DxiOKEl9NQ2UFfOWLji5AiblQJ9p","environment":"production","plan":"hobby"},"lambdas":[{"id":"bld_j9y5af3qp","createdAt":1780791429632,"entrypoint":".","readyState":"READY","readyStateAt":1780791429632,"output":[]}],"aliasAssignedAt":null,"build":{"env":[]},"builds":[],"createdIn":"sfo1","env":[],"functions":null,"inspectorUrl":"https://vercel.com/aboosuraj-s-projects/dex-analytics-opn/3VtBJ2MXVEEVS4yap6GitV5NG9NV","isInConcurrentBuildsQueue":false,"isInSystemBuildsQueue":true,"ownerId":"team_3iZb1OLqjC9glHITp28qA1JB","plan":"hobby","projectId":"prj_DxiOKEl9NQ2UFfOWLji5AiblQJ9p","projectSettings":{"buildCommand":null,"devCommand":null,"framework":"nextjs","commandForIgnoringBuildStep":null,"installCommand":null,"outputDirectory":null,"speedInsights":{"id":"9KAWTOyRWaRpiZ6JQURThTsyasb","hasData":false,"enabledAt":1780655636702},"webAnalytics":{"id":"uq0e8pOIoNMQpdKZmw1bdYvQs"},"nodeVersion":"24.x"},"routes":null,"config":{"version":1,"secureComputePrimaryRegion":null,"secureComputeFallbackRegion":null,"functionTimeout":300,"functionType":"fluid","functionMemoryType":"standard","isUsingActiveCPU":true,"resourceConfig":{"buildQueue":{"configuration":"SKIP_NAMESPACE_QUEUE"}}},"attribution":{"commitMeta":{"name":"Abubakar suraj","email":"145049374+Aboosuraj@users.noreply.github.com","isVerified":false}}}
+[client-debug] 2026-06-07T00:17:10.307Z Deployment created
+[client-debug] 2026-06-07T00:17:10.308Z Yielding a 'created' event
+  Inspect     https://vercel.com/aboosuraj-s-projects/dex-analytics-opn/3VtBJ2MXVEEVS4yap6GitV5NG9NV
+▲ Production  https://dex-analytics-mbsxceqil-aboosuraj-s-projects.vercel.app
+https://dex-analytics-mbsxceqil-aboosuraj-s-projects.vercel.app> [debug] [2026-06-07T00:17:10.309Z] Spinner invoked (Building…) with a 0ms delay
+> [debug] [2026-06-07T00:17:10.309Z] #3 → GET https://api.vercel.com/v3/now/deployments/dpl_3VtBJ2MXVEEVS4yap6GitV5NG9NV/events?direction=forward&follow=1&format=lines&teamId=team_3iZb1OLqjC9glHITp28qA1JB
+[client-debug] 2026-06-07T00:17:10.309Z Waiting for deployment to be ready...
+[client-debug] 2026-06-07T00:17:10.310Z Waiting for builds and the deployment to complete...
+[client-debug] 2026-06-07T00:17:12.083Z Deployment state changed to BUILDING
+[client-debug] 2026-06-07T00:17:12.084Z Yielding a 'building' event
+> [debug] [2026-06-07T00:17:12.084Z] Spinner invoked (Building…) with a 0ms delay
+> [debug] [2026-06-07T00:17:12.601Z] #3 ← 200 OK: sfo1::kgvkm-1780791430217-299912bbcb8b [2.29s]
+> [debug] [2026-06-07T00:17:12.602Z] Spinner invoked (Running build in Washington, D.C., USA (East) – iad1) with a 0ms delay
+> [debug] [2026-06-07T00:17:12.603Z] Spinner invoked (Build machine configuration: 2 cores, 8 GB) with a 0ms delay
+> [debug] [2026-06-07T00:17:12.603Z] Spinner invoked (Retrieving list of deployment files...) with a 0ms delay
+> [debug] [2026-06-07T00:17:12.603Z] Spinner invoked (Previous build caches not available.) with a 0ms delay
+> [debug] [2026-06-07T00:17:12.603Z] Spinner invoked (Downloading 21 deployment files...) with a 0ms delay
+> [debug] [2026-06-07T00:17:12.603Z] Spinner invoked (Running "vercel build") with a 0ms delay
+> [debug] [2026-06-07T00:17:12.603Z] Spinner invoked (Vercel CLI 54.9.0) with a 0ms delay
+> [debug] [2026-06-07T00:17:12.603Z] Spinner invoked (Installing dependencies...) with a 0ms delay
+> [debug] [2026-06-07T00:17:26.021Z] Spinner invoked (added 366 packages in 12s) with a 0ms delay
+> [debug] [2026-06-07T00:17:26.021Z] Spinner invoked (147 packages are looking for funding) with a 0ms delay
+> [debug] [2026-06-07T00:17:26.021Z] Spinner invoked (run `npm fund` for details) with a 0ms delay
+> [debug] [2026-06-07T00:17:26.021Z] Spinner invoked (Detected Next.js version: 16.2.7) with a 0ms delay
+> [debug] [2026-06-07T00:17:26.021Z] Spinner invoked (Running "npm run build") with a 0ms delay
+> [debug] [2026-06-07T00:17:26.021Z] Spinner invoked (> my-app@0.1.0 build) with a 0ms delay
+> [debug] [2026-06-07T00:17:26.021Z] Spinner invoked (> next build) with a 0ms delay
+> [debug] [2026-06-07T00:17:27.053Z] Spinner invoked (Applying modifyConfig from Vercel) with a 0ms delay
+> [debug] [2026-06-07T00:17:27.053Z] Spinner invoked (Attention: Next.js now collects completely anonymous telemetry regarding usage.) with a 0ms delay
+> [debug] [2026-06-07T00:17:27.053Z] Spinner invoked (This information is used to shape Next.js' roadmap and prioritize features.) with a 0ms delay
+> [debug] [2026-06-07T00:17:27.053Z] Spinner invoked (You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:) with a 0ms delay
+> [debug] [2026-06-07T00:17:27.053Z] Spinner invoked (https://nextjs.org/telemetry) with a 0ms delay
+> [debug] [2026-06-07T00:17:27.053Z] Spinner invoked (▲ Next.js 16.2.7 (Turbopack)) with a 0ms delay
+> [debug] [2026-06-07T00:17:27.053Z] Spinner invoked (Creating an optimized production build ...) with a 0ms delay
+[client-debug] 2026-06-07T00:17:31.468Z Yielding a 'error' event
+> [debug] [2026-06-07T00:17:31.473Z] Error: Error: Command "npm run build" exited with 1
+Error: Command "npm run build" exited with 1
+    at Now.handleDeploymentError (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/chunks/chunk-NHT3AQHJ.js:2435:12)
+    at processDeployment (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/chunks/chunk-NHT3AQHJ.js:2185:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Now.create (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/chunks/chunk-NHT3AQHJ.js:2327:24)
+    at async createDeploy (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/commands/deploy/index.js:183:12)
+    at async handleDefaultDeploy (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/commands/deploy/index.js:1672:18)
+    at async _Span.trace (/usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/node_modules/@vercel/build-utils/dist/index.js:38997:14)
+    at async main (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/index.js:2185:18)
+> [debug] [2026-06-07T00:17:31.473Z] handling error: Error: Command "npm run build" exited with 1
+    at Now.handleDeploymentError (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/chunks/chunk-NHT3AQHJ.js:2435:12)
+    at processDeployment (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/chunks/chunk-NHT3AQHJ.js:2185:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Now.create (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/chunks/chunk-NHT3AQHJ.js:2327:24)
+    at async createDeploy (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/commands/deploy/index.js:183:12)
+    at async handleDefaultDeploy (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/commands/deploy/index.js:1672:18)
+    at async _Span.trace (/usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/node_modules/@vercel/build-utils/dist/index.js:38997:14)
+    at async main (file:///usr/local/share/nvm/versions/node/v24.14.0/lib/node_modules/vercel/dist/index.js:2185:18)
+Error: Command "npm run build" exited with 1
+> [debug] [2026-06-07T00:17:32.040Z] Vercel CLI 54.9.1 (Node.js 24.14.0)
+
+> [debug] [2026-06-07T00:17:32.579Z] Telemetry event tracked
+> [debug] [2026-06-07T00:17:32.611Z] Telemetry subprocess exited with code 0
